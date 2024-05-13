@@ -88,8 +88,8 @@ namespace pryCalvetEtapa6
 
             foreach (clsVehiculo vehiculo in listaVehiculos.ToList()) //Para cada vehiculo en la lista 
             {                
-                int desplazamientoX = random.Next(-40, 41);
-                int desplazamientoY = random.Next(-40, 41);     //Movimiento aleatorio del vehiculo
+                int desplazamientoX = random.Next(-30, 30);
+                int desplazamientoY = random.Next(-30, 30);     //Movimiento aleatorio del vehiculo
                 int nuevaPosX = vehiculo.pctVehiculo.Location.X + desplazamientoX;
                 int nuevaPosY = vehiculo.pctVehiculo.Location.Y + desplazamientoY;
 

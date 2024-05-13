@@ -15,7 +15,7 @@ namespace pryCalvetEtapa6
         public PictureBox pctVehiculo;
         public string tipoVehiculo;
 
-        public void CrearVehiculo(int aleatorio)
+        public void CrearVehiculo(int aleatorio) //Requiere un numero para ser llamado, dependiendo el numero será distinto el vehiculo.
         {
             pctVehiculo = new PictureBox();
             switch(aleatorio)
@@ -24,7 +24,7 @@ namespace pryCalvetEtapa6
                     string ruta = Path.Combine(Application.StartupPath, "..", "..", "Resources", "auto.png");
                     pctVehiculo.ImageLocation = ruta;
                     pctVehiculo.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pctVehiculo.Size = new Size(100, 100);
+                    pctVehiculo.Size = new Size(75, 100);
                     pctVehiculo.BackColor = Color.Transparent;
                     tipoVehiculo = "Auto";
 
@@ -41,7 +41,7 @@ namespace pryCalvetEtapa6
                     string ruta3 = Path.Combine(Application.StartupPath, "..", "..", "Resources", "barco.png");
                     pctVehiculo.ImageLocation = ruta3;
                     pctVehiculo.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pctVehiculo.Size = new Size(120, 120);
+                    pctVehiculo.Size = new Size(100, 100);
                     pctVehiculo.BackColor = Color.Transparent;
                     tipoVehiculo = "Barco";
                     break;
