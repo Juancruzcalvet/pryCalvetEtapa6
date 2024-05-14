@@ -46,7 +46,7 @@ namespace pryCalvetEtapa6
                     //random de y, que tan alto esta
                     posicionY = random.Next(0, this.ClientSize.Height - nuevoVehiculo.pctVehiculo.Height);
 
-                    superpuesto = false;
+                    superpuesto = false;//No esta superpuesto con nadie
 
                     // vemos si la posicion decidida ya esta ocupada
                     foreach (clsVehiculo vehiculoExistente in listaVehiculos)
@@ -54,7 +54,7 @@ namespace pryCalvetEtapa6
                         if (Math.Abs(posicionX - vehiculoExistente.pctVehiculo.Location.X) < nuevoVehiculo.pctVehiculo.Width &&
                             Math.Abs(posicionY - vehiculoExistente.pctVehiculo.Location.Y) < nuevoVehiculo.pctVehiculo.Height)
                         {
-                            superpuesto = true;
+                            superpuesto = true; //En caso de estar superpuesto cambiamos el booleano
                             break;
                         }
                     }
@@ -62,7 +62,7 @@ namespace pryCalvetEtapa6
                 while (superpuesto);
 
                 //Agregamos a la lista y ponemos el picturebox del vehiculo en el frm
-                nuevoVehiculo.pctVehiculo.Location = new Point(posicionX, posicionY);
+                nuevoVehiculo.pctVehiculo.Location = new Point(posicionX, posicionY); 
                 listaVehiculos.Add(nuevoVehiculo);
                 Controls.Add(nuevoVehiculo.pctVehiculo);
             }
