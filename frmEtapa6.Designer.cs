@@ -38,6 +38,7 @@
             // 
             // btnCrear
             // 
+            this.btnCrear.Enabled = false;
             this.btnCrear.Location = new System.Drawing.Point(12, 471);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(75, 23);
@@ -72,6 +73,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 3;
+            this.txtCantidad.TextChanged += new System.EventHandler(this.txtCantidad_TextChanged);
             // 
             // tmrMovimiento
             // 

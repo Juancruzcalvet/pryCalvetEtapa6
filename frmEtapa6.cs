@@ -68,6 +68,8 @@ namespace pryCalvetEtapa6
                 listaVehiculos.Add(nuevoVehiculo);
                 Controls.Add(nuevoVehiculo.pctVehiculo);
             }
+            txtCantidad.Clear();
+            btnCrear.Enabled = false;
         }
 
         private void btnMover_Click(object sender, EventArgs e)
@@ -119,6 +121,11 @@ namespace pryCalvetEtapa6
                     }
                 }
             }
+        }
+
+        private void txtCantidad_TextChanged(object sender, EventArgs e)
+        {
+            btnCrear.Enabled = true;
         }
     }
 }
