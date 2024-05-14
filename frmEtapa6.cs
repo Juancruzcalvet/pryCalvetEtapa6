@@ -116,7 +116,7 @@ namespace pryCalvetEtapa6
                         Controls.Remove(vehiculo.pctVehiculo); //"Mata" el vehiculo y el chocado, suma al contador y actualiza el label
                         Controls.Remove(otroVehiculo.pctVehiculo);
                         Contador++;
-                        lblContador.Text = Convert.ToString(Contador);
+                        lblContador.Text ="Choques: " + Convert.ToString(Contador);
                         break; 
                     }
                 }
