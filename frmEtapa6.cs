@@ -16,9 +16,7 @@ namespace pryCalvetEtapa6
         {
             InitializeComponent();
         }
-        clsVehiculo objAuto = new clsVehiculo();
-        clsVehiculo objAvion = new clsVehiculo();
-        clsVehiculo objBarco = new clsVehiculo(); //Instanciamos objetos
+
         int Contador; //Para las colisiones
         List<clsVehiculo> listaVehiculos = new List<clsVehiculo>(); //Lista de vehiculos activos
 
@@ -125,7 +123,7 @@ namespace pryCalvetEtapa6
 
         private void txtCantidad_TextChanged(object sender, EventArgs e)
         {
-            btnCrear.Enabled = true;
+            btnCrear.Enabled = true; //Cuando escribimos se activa el boton
         }
 
         private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
