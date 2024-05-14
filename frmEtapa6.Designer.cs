@@ -39,7 +39,7 @@
             // btnCrear
             // 
             this.btnCrear.Enabled = false;
-            this.btnCrear.Location = new System.Drawing.Point(12, 471);
+            this.btnCrear.Location = new System.Drawing.Point(12, 526);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(75, 23);
             this.btnCrear.TabIndex = 0;
@@ -50,7 +50,7 @@
             // 
             // btnMover
             // 
-            this.btnMover.Location = new System.Drawing.Point(12, 500);
+            this.btnMover.Location = new System.Drawing.Point(12, 555);
             this.btnMover.Name = "btnMover";
             this.btnMover.Size = new System.Drawing.Size(75, 23);
             this.btnMover.TabIndex = 1;
@@ -61,7 +61,7 @@
             // lblContador
             // 
             this.lblContador.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lblContador.Location = new System.Drawing.Point(96, 500);
+            this.lblContador.Location = new System.Drawing.Point(96, 555);
             this.lblContador.Name = "lblContador";
             this.lblContador.Size = new System.Drawing.Size(100, 23);
             this.lblContador.TabIndex = 2;
@@ -70,11 +70,12 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(96, 474);
+            this.txtCantidad.Location = new System.Drawing.Point(96, 529);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(100, 20);
             this.txtCantidad.TabIndex = 3;
             this.txtCantidad.TextChanged += new System.EventHandler(this.txtCantidad_TextChanged);
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
             // tmrMovimiento
             // 
@@ -86,7 +87,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.RosyBrown;
-            this.ClientSize = new System.Drawing.Size(872, 535);
+            this.ClientSize = new System.Drawing.Size(894, 587);
             this.Controls.Add(this.txtCantidad);
             this.Controls.Add(this.lblContador);
             this.Controls.Add(this.btnMover);

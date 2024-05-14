@@ -30,7 +30,7 @@ namespace pryCalvetEtapa6
         private void btnCrear_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-                int Cantidad = Convert.ToInt16(txtCantidad.Text); //Cantidad q pone el usuario, trae x vehiculos
+            int Cantidad = Convert.ToInt16(txtCantidad.Text); //Cantidad q pone el usuario, trae x vehiculos
             for (int i = 0; i < Cantidad; i++)
             {
                 clsVehiculo nuevoVehiculo = new clsVehiculo();
@@ -126,6 +126,14 @@ namespace pryCalvetEtapa6
         private void txtCantidad_TextChanged(object sender, EventArgs e)
         {
             btnCrear.Enabled = true;
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar != (char)8 && !char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true; //admitimos solo numeros en el textbox
+            }
         }
     }
 }
