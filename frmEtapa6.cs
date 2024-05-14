@@ -30,7 +30,7 @@ namespace pryCalvetEtapa6
         private void btnCrear_Click(object sender, EventArgs e)
         {
             Random random = new Random();
-            int Cantidad = Convert.ToInt16(txtCantidad.Text); //Cantidad q pone el usuario, trae x vehiculos
+                int Cantidad = Convert.ToInt16(txtCantidad.Text); //Cantidad q pone el usuario, trae x vehiculos
             for (int i = 0; i < Cantidad; i++)
             {
                 clsVehiculo nuevoVehiculo = new clsVehiculo();
