@@ -95,7 +95,7 @@ namespace pryCalvetEtapa6
 
                 if (nuevaPosX < 0)
                     nuevaPosX = 0;
-                else if (nuevaPosX > this.ClientSize.Width - vehiculo.pctVehiculo.Width)
+                else if (nuevaPosX > this.ClientSize.Width - vehiculo.  .Width)
                     nuevaPosX = this.ClientSize.Width - vehiculo.pctVehiculo.Width;
                                                //En caso de chocar con los limites, da la vuelta
                 if (nuevaPosY < 0)
